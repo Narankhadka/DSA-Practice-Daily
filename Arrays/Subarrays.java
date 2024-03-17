@@ -2,7 +2,7 @@ public class Subarrays {
     //A continuos part of array
     public static void printSubarray(int number[])
     {
-        int total_subarray=0;
+        int totalSubarray=0;
         for(int i=0;i<number.length;i++)
         {
             int start=i;
@@ -14,7 +14,7 @@ public class Subarrays {
                 {
                     System.out.print(number[k]+" ");
                 }
-                total_subarray++;
+                totalSubarray++;
                 System.out.println();
             }
             System.out.println();
