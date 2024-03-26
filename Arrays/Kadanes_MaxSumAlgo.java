@@ -9,6 +9,14 @@ public class Kadanes_MaxSumAlgo {
         }
         return false;
     }
+ /**
+  * The `kadanesAlgo` function in Java implements Kadane's algorithm to find the maximum sum subarray
+  * in an array of integers, handling negative numbers.
+  * 
+  * @param numbers The `kadanesAlgo` method you provided implements Kadane's algorithm to find the
+  * maximum subarray sum in an array of integers. The `numbers` parameter is an array of integers for
+  * which you want to find the maximum subarray sum.
+  */
     public static void kadanesAlgo(int numbers[])
     {
         int maxSum=Integer.MIN_VALUE;
