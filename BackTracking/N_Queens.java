@@ -1,3 +1,7 @@
+/**
+ * The `N_QueensModify` class in Java implements a solution to the N-Queens problem using backtracking
+ * to find a placement of queens on a chessboard without attacking each other.
+ */
 public class N_Queens {
 
   public static boolean isSafe(char[][] board, int row, int col) {
