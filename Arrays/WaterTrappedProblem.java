@@ -33,7 +33,7 @@ public class WaterTrappedProblem {
     public static void main(String[] args) {
         // Given n non-negative integers representing an elevation map where the width
         // of each bar is 1, compute how much water it can trap after raining.
-        int height[] = {1,8,6,2,5,4,8,3,7}; // Define the elevation map as an array of heights
+        int height[] = {4,2,0,3,2,5}; // Define the elevation map as an array of heights
         int waterTrapped = TrapdRainWater(height); // Calculate the trapped water
         System.out.println(waterTrapped); // Print the result
     }
