@@ -162,28 +162,48 @@ public class Basic {
     }
     prNode.next=prNode.next.next;
   }
+  public static boolean isCycle(){
+    Node slow=head;
+    Node fast=head;
+    while (fast!=null && fast.next!=null) {
+      slow=slow.next;//+1
+      fast=fast.next.next;//+2
+      if (slow==fast) {
+        return true;
+        
+      }
+
+    }
+    return false;
+  }
+
 
   public static void main(String[] args) {
-    // Method add()
-    //  remove ()
-    // print ()
-    //search
-    Basic ll = new Basic();
-    // ll.addFirst(3);
-    ll.addFirst(2);
-    ll.addFirst(1);
-    ll.addLast(4);
-    ll.addLast(5);
-    ll.print();
-    // ll.removeLast();
-    // System.out.println();
+    // // Method add()
+    // //  remove ()
+    // // print ()
+    // //search
+    // Basic ll = new Basic();
+    // // ll.addFirst(3);
+    // ll.addFirst(2);
+    // ll.addFirst(1);
+    // ll.addLast(4);
+    // ll.addLast(5);
     // ll.print();
-    // System.out.println();
-    // System.out.println(ll.recSearch(2));
-    // ll.reverse();
+    // // ll.removeLast();
+    // // System.out.println();
+    // // ll.print();
+    // // System.out.println();
+    // // System.out.println(ll.recSearch(2));
+    // // ll.reverse();
+    // // ll.print();
+    // ll.deleteNthNodeFromEnd(2);
     // ll.print();
-    ll.deleteNthNodeFromEnd(2);
-    ll.print();
+    head=new Node(1);
+    head.next=new Node(2);
+    head.next.next=new Node(3);
+    head.next.next.next=head;
+    System.out.println(isCycle());
 
   }
 }
