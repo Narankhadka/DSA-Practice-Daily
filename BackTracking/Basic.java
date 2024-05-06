@@ -2,7 +2,7 @@
  * This Java class named Basic contains a method to recursively change elements in an array and print
  * all possible combinations.
  */
-package BackTracking;
+
 
 public class Basic {
 public static void changeArr(int [] arr,int i,int value)
@@ -13,7 +13,7 @@ public static void changeArr(int [] arr,int i,int value)
         printArr(arr);
         // System.out.println();
         return;
-        
+
     }
     arr[i]=value;
     changeArr(arr, i+1, value+1);
